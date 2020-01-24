@@ -27,7 +27,7 @@ def getText(path):
   
 def audibify(text, toSave, name):
   audio = gTTS(text=text, lang="en")
-  audio.save("{}{}.mp3".format(toSave, name))
+  audio.save("{}{}.mp3".format(toSave.split('\\')[:-1], name))
   pass
   
 def main(path):
@@ -38,6 +38,3 @@ def main(path):
   # log timing to console
   print('took', "{0:.2f}".format(time() - started), 'seconds')
   exit()
-  
-  
-main('D:\Applications\Stephen Hawking\Brief Answers to the Big Questions (3)\Brief Answers to the Big Questi - Stephen Hawking.pdf')
