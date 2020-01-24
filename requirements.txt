@@ -1,0 +1,2 @@
+pdfminer.six==20181108
+gTTS==2.1.0
