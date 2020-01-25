@@ -1,2 +1,4 @@
 pdfminer.six==20181108
 gTTS==2.1.0
+PyQt5==5.14.1
+PyQt5-sip==12.7.0
